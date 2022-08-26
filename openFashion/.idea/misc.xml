@@ -9,7 +9,20 @@
         <entry key="..\:/BML Education/MAD/openFashion/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/BML Education/MAD/openFashion/app/src/main/res/layout/activity_sign_up.xml" value="0.2359375" />
         <entry key="..\:/BML Education/MAD/openFashion/app/src/main/res/layout/slide_item_container.xml" value="0.2" />
+<<<<<<< Updated upstream
         <entry key="..\:/BML Education/MAD/openFashion/app/src/main/res/layout/slider_layout.xml" value="0.24895833333333334" />
+=======
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/drawable-v24/custom_ic_edit_text.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/drawable-v24/custom_ic_mail.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/drawable-v24/ic_edit.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/drawable-v24/ic_mail.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/drawable/edit_text_background.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/drawable/round_btn.xml" value="0.1775" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/font/proxima_nova.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/openFashion/openFashion/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
