@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< Updated upstream
         setContentView(R.layout.activity_main);
 
         LogInButton=findViewById(R.id.buttonLogIn);
@@ -84,8 +83,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,signUpActivity.class));
                 break;
         }
-=======
         setContentView(R.layout.activity_onboarding);
->>>>>>> Stashed changes
     }
 }

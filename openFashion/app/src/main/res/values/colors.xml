@@ -7,14 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-<<<<<<< Updated upstream
     <color name="background">#F0F4F3</color>
     <color name="button_text">#50C2C9</color>
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
-=======
     <color name="yellow">#FFFF00</color>
     <color name="colorEdittext">#14000000</color>
     <color name="line_colour">#c0c0c0</color>
->>>>>>> Stashed changes
 </resources>

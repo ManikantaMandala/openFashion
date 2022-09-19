@@ -13,26 +13,6 @@
         android:layout_marginTop="10dp"
         android:src="@drawable/profile_picture"/>
 
-    <ImageView
-        android:id="@+id/slideLayoutEclipse"
-        android:layout_width="70dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginStart="30dp"
-        android:src="@drawable/rounded_cornered_rectangle">
-    </ImageView>
-
-    <TextView
-        android:id="@+id/sliderLayoutSlideNumbers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/_1_of_3"
-        android:layout_marginStart="40dp"
-        android:textSize="20sp"
-        android:layout_marginTop="-45dp"
-        android:textColor="@android:color/darker_gray"
-        />
-
 
     <TextView
         android:id="@+id/sliderLayoutTextViewTitle"
@@ -52,8 +32,7 @@
         android:text="@string/description1"
         android:layout_marginStart="30dp"
         android:textSize="20sp"
-        android:textColor="@android:color/darker_gray"
-        />
+        android:textColor="@android:color/darker_gray"/>
 
 
 </LinearLayout>
