@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db2a238-a199-453e-806c-ee031c685631" name="Changes" comment="" />
+    <list default="true" id="5db2a238-a199-453e-806c-ee031c685631" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/openFashion/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openFashion/.idea/gradle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
