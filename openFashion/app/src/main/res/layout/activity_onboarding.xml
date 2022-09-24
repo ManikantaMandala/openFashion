@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Onboarding">
+    tools:context=".OnBoarding">
 
     <ImageView
         android:id="@+id/dummy_bg"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@color/white"
+        android:background="@color/littleWhite"
         app:cardCornerRadius="15dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"

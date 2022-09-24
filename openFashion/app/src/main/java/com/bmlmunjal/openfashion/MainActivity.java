@@ -2,7 +2,6 @@ package com.bmlmunjal.openfashion;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             dots[i].setTextColor(getResources().getColor(R.color.inactive,getApplicationContext().getTheme()));
             mDotLayout.addView(dots[i]);
         }
-        dots[position].setTextColor(getResources().getColor(R.color.active,getApplicationContext().getTheme()));
+        dots[position].setTextColor(getResources().getColor(R.color.black,getApplicationContext().getTheme()));
     }
 
     ViewPager.OnPageChangeListener viewListener= new ViewPager.OnPageChangeListener() {
@@ -77,12 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case (R.id.buttonLogIn):
-                startActivity(new Intent(MainActivity.this,logInActivity.class));
+                startActivity(new Intent(MainActivity.this, OnBoarding.class));
+                Log.d("Onboarding button", "onClick: On clicking logIn button");
                 break;
             case (R.id.buttonSignUp):
                 startActivity(new Intent(MainActivity.this,signUpActivity.class));
                 break;
         }
-        setContentView(R.layout.activity_onboarding);
     }
 }

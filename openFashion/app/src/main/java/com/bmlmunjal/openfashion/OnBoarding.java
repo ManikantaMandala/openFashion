@@ -3,12 +3,13 @@ package com.bmlmunjal.openfashion;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
-public class logInActivity extends AppCompatActivity {
+public class OnBoarding extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_onboarding);
     }
 }

@@ -17,10 +17,7 @@
             android:name=".signUpActivity"
             android:exported="false" />
         <activity
-            android:name=".logInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Onboarding"
+            android:name=".OnBoarding"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

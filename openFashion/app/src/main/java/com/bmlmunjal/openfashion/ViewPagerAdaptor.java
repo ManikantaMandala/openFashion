@@ -14,14 +14,14 @@ import androidx.viewpager.widget.PagerAdapter;
 public class ViewPagerAdaptor extends PagerAdapter {
     Context context;
     int image[]={
-            R.drawable.profile_picture,
-            R.drawable.profile_picture,
-            R.drawable.profile_picture,
+            R.drawable.women_on_boarding,
+            R.drawable.kid_on_boarding,
+            R.drawable.men_on_boarding,
     };
     int heading[]={
-            R.string.text_view_heading1,
-            R.string.text_view_heading2,
-            R.string.text_view_heading3,
+            R.string.text_view_heading,
+            R.string.text_view_heading,
+            R.string.text_view_heading,
     };
 
     int description[]={
