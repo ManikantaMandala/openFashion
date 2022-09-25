@@ -16,4 +16,5 @@
     <string name="log_in">Login</string>
     <string name="forget_password">Forgot Password</string>
     <string name="signup_text">No account yet you are missing a lot in the new fashion world!!</string>
+    <string name="cart">Cart</string>
 </resources>
