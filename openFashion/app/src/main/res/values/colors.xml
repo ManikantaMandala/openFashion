@@ -15,4 +15,5 @@
     <color name="yellow">#FFFF00</color>
     <color name="colorEdittext">#14000000</color>
     <color name="line_colour">#c0c0c0</color>
+    <color name="back_btn_colour">#B9EEEDED</color>
 </resources>
