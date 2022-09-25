@@ -5,12 +5,16 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,6 +24,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     TextView[] dots;
     ViewPagerAdaptor viewPagerAdaptor;
+
+    int currentPage = 0;
+    Timer timer;
+    final long DELAY_MS = 500;
+    final int NUM_PAGES=3;
+    final long PERIOD_MS = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +43,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mDotLayout=(LinearLayout) findViewById(R.id.theShiftingDots);
         viewPagerAdaptor= new ViewPagerAdaptor(this);
         mSliderViewPager.setAdapter(viewPagerAdaptor);
+        final Handler handler = new Handler();
+        final Runnable Update = new Runnable() {
+            public void run() {
+                if (currentPage == NUM_PAGES) {
+                    currentPage = 0;
+                }
+                mSliderViewPager.setCurrentItem(currentPage++, true);
+            }
+        };
+
+        timer = new Timer(); // This will create a new Thread
+        timer.schedule(new TimerTask() { // task to be scheduled
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, DELAY_MS, PERIOD_MS);
 
         setUpIndicator(0);
 
