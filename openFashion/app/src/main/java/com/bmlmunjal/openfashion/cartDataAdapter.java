@@ -37,7 +37,7 @@ public class cartDataAdapter extends RecyclerView.Adapter<cartDataAdapter.ViewHo
         holder.itemPrice.setText(cartDataList.getItemPrice());
         holder.itemImage.setImageResource(cartDataList.getItemImage());
 
-        holder.itemSize.setAdapter(cartDataList.getItemSize());
+//        holder.itemSize.setAdapter(cartDataList.getItemSize());
 
     }
 
