@@ -33,7 +33,7 @@
     <string name="re_enter_password">Re-Enter Password</string>
     <string name="continuee">Continue</string>
     <string name="go_back">Go Back</string>
-
+    <string name="username">Nikita Behra</string>
     <string name="cart">Cart</string>
     <string name="pink_crew_neck_t_shirt">Pink Crew Neck T-shirt</string>
     <string name="_499">₹499</string>
@@ -44,4 +44,27 @@
     <string name="profile">Profile</string>
     <string name="logout">Log Out!</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_score">1,250</string>
+    <string name="score">1,250</string>
+    <string name="orders">1.250</string>
+    <string name="taps">1,250</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="Wishlist">Wishlist</string>
+    <string name="Cart">Cart</string>
+    <string name="Address">Address</string>
+    <string name="Help">Help</string>
+    <string name="Helpcenter">Help center</string>
+    <string name="size_chart">Size Chart</string>
+    <string name="how_to_return">How to return</string>
+    <string name="FAQs">FAQS</string>
+    <string name="Agreement">Agreement</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="Terms_and_conditions">Terms and Conditions</string>
+    <string name="About_us">About Us</string>
+    <string name="Account">Account</string>
+    <string name="Profile_details">Profile Details</string>
+    <string name="tips">Tips</string>
+    <string name="Settings">Settings</string>
+    <string name="Beta">Beta</string>
+    <string name="joinour_team">Join our team</string>
 </resources>
