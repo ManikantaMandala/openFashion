@@ -5,7 +5,7 @@
     <string name="_1_of_3">1 of 3</string>
     <string name="_2_of_3">2 of 3</string>
     <string name="_3_of_3">3 of 3</string>
-    <string name="text_view_heading">Welcome Aboard OpenFashion</string>
+    <string name="text_view_heading">Welcome Onboard OpenFashion</string>
     <string name="description1">Find your perfect Clothes that shine on you!</string>
     <string name="description2">Get your loved lines the perfect fit</string>
     <string name="description3">Perfect spot for all your occasions</string>
@@ -24,6 +24,5 @@
     <string name="home">Home</string>
     <string name="navigation">Navigation</string>
     <string name="profile">Profile</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
