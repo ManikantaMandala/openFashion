@@ -7,7 +7,6 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardEleration="10dp"
         app:cardCornerRadius="10dp"
         app:cardBackgroundColor="@color/back_btn_colour">
         <LinearLayout
@@ -53,7 +52,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@color/gray">
+                        android:background="@color/back_btn_colour">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -68,7 +67,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@color/gray"
+                        android:background="@color/back_btn_colour"
                         android:layout_marginStart="10dp">
                         <TextView
                             android:layout_width="wrap_content"

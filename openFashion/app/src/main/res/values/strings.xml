@@ -16,5 +16,14 @@
     <string name="log_in">Login</string>
     <string name="forget_password">Forgot Password</string>
     <string name="signup_text">No account yet you are missing a lot in the new fashion world!!</string>
-
+    <string name="cart">Cart</string>
+    <string name="pink_crew_neck_t_shirt">Pink Crew Neck T-shirt</string>
+    <string name="_499">₹499</string>
+    <string name="size">Size:</string>
+    <string name="item">Item:</string>
+    <string name="home">Home</string>
+    <string name="navigation">Navigation</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
