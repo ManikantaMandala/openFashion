@@ -14,8 +14,26 @@
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
     <string name="log_in">Login</string>
-    <string name="forget_password">Forgot Password</string>
+    <string name="forget_password">Forgot Password?</string>
     <string name="signup_text">No account yet you are missing a lot in the new fashion world!!</string>
+    <string name="login_text">Already had an account just click here to access the world directly...</string>
+
+    <string name="forget_password_subtext">Dont panic we are here for you..</string>
+    <string name="enter_email">Enter your Email Address</string>
+    <string name="send_link">Send Link</string>
+    <string name="enter_email_address">Enter your Email Address</string>
+    <string name="user_signup">User Signup</string>
+    <string name="user_signup_sub_text">Your just a few steps away to access a new fashion world !!!</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="next">Next ></string>
+    <string name="set_password">Set Password</string>
+    <string name="set_password_subtext">Secure your fashion world...</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="continuee">Continue</string>
+    <string name="go_back">Go Back</string>
+
     <string name="cart">Cart</string>
     <string name="pink_crew_neck_t_shirt">Pink Crew Neck T-shirt</string>
     <string name="_499">₹499</string>
@@ -24,5 +42,6 @@
     <string name="home">Home</string>
     <string name="navigation">Navigation</string>
     <string name="profile">Profile</string>
+    <string name="logout">Log Out!</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
