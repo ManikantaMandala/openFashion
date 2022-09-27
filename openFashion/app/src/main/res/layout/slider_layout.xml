@@ -11,8 +11,7 @@
         android:layout_width="620dp"
         android:layout_height="620dp"
         android:layout_marginStart="-105dp"
-        android:layout_marginTop="-30dp"
-        android:src="@drawable/women_on_boarding"/>
+        android:src="@drawable/men_on_boarding"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
