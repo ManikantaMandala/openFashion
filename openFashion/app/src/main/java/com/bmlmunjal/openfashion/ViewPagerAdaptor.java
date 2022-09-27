@@ -14,20 +14,14 @@ import androidx.viewpager.widget.PagerAdapter;
 public class ViewPagerAdaptor extends PagerAdapter {
     Context context;
     int image[]={
-            R.drawable.profile_picture,
-            R.drawable.profile_picture,
-            R.drawable.profile_picture,
+            R.drawable.women_on_boarding,
+            R.drawable.kid_on_boarding,
+            R.drawable.men_on_boarding,
     };
-    int noOfSlides[]={
-            R.string._1_of_3,
-            R.string._2_of_3,
-            R.string._3_of_3
-    };
-
     int heading[]={
-            R.string.text_view_heading1,
-            R.string.text_view_heading2,
-            R.string.text_view_heading3,
+            R.string.text_view_heading,
+            R.string.text_view_heading,
+            R.string.text_view_heading,
     };
 
     int description[]={
@@ -56,12 +50,10 @@ public class ViewPagerAdaptor extends PagerAdapter {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.slider_layout,container,false);
         ImageView slideImage= (ImageView) view.findViewById(R.id.slideImage);
-        TextView sliderLayoutSlideNumbers = (TextView) view.findViewById(R.id.sliderLayoutSlideNumbers);
         TextView sliderLayoutTextViewTitle = (TextView) view.findViewById(R.id.sliderLayoutTextViewTitle);
         TextView sliderLayoutTextViewDescription = (TextView) view.findViewById(R.id.sliderLayoutTextViewDescription);
 
         slideImage.setImageResource(image[position]);
-        sliderLayoutSlideNumbers.setText(noOfSlides[position]);
         sliderLayoutTextViewTitle.setText(heading[position]);
         sliderLayoutTextViewDescription.setText(description[position]);
 

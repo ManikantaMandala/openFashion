@@ -2,10 +2,10 @@ package com.bmlmunjal.openfashion;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Html;
 import android.util.Log;
 import android.view.View;
@@ -13,27 +13,62 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewPager mSliderViewPager;
     private LinearLayout mDotLayout;
     private Button LogInButton,SignUpButton;
 
+    private FirebaseAuth mAuth;
     TextView[] dots;
     ViewPagerAdaptor viewPagerAdaptor;
+
+    String onBoardingText="SignIn";
+    public static final String EXTRA_NAME= "com.bmlmunjal.openfashion.extra.onboarding";
+
+    int currentPage = 0;
+    Timer timer;
+    final long DELAY_MS = 500;
+    final int NUM_PAGES=3;
+    final long PERIOD_MS = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
         LogInButton=findViewById(R.id.buttonLogIn);
         SignUpButton=findViewById(R.id.buttonSignUp);
 
+        mAuth= FirebaseAuth.getInstance();
+
         mSliderViewPager= findViewById(R.id.viewPageImageSlider);
         mDotLayout=(LinearLayout) findViewById(R.id.theShiftingDots);
         viewPagerAdaptor= new ViewPagerAdaptor(this);
         mSliderViewPager.setAdapter(viewPagerAdaptor);
+        final Handler handler = new Handler();
+        final Runnable Update = new Runnable() {
+            public void run() {
+                if (currentPage == NUM_PAGES) {
+                    currentPage = 0;
+                }
+                mSliderViewPager.setCurrentItem(currentPage++, true);
+            }
+        };
+
+        timer = new Timer(); // This will create a new Thread
+        timer.schedule(new TimerTask() { // task to be scheduled
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, DELAY_MS, PERIOD_MS);
 
         setUpIndicator(0);
 
@@ -41,6 +76,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         LogInButton.setOnClickListener(this);
         SignUpButton.setOnClickListener(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user= mAuth.getCurrentUser();
+        if(user != null){
+            startActivity(new Intent(this,HomeActivity.class));
+        }
     }
 
     public void setUpIndicator(int position){
@@ -54,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             dots[i].setTextColor(getResources().getColor(R.color.inactive,getApplicationContext().getTheme()));
             mDotLayout.addView(dots[i]);
         }
-        dots[position].setTextColor(getResources().getColor(R.color.active,getApplicationContext().getTheme()));
+        dots[position].setTextColor(getResources().getColor(R.color.black,getApplicationContext().getTheme()));
     }
 
     ViewPager.OnPageChangeListener viewListener= new ViewPager.OnPageChangeListener() {
@@ -77,13 +121,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case (R.id.buttonLogIn):
-                startActivity(new Intent(MainActivity.this,logInActivity.class));
-                break;
             case (R.id.buttonSignUp):
-                startActivity(new Intent(MainActivity.this,signUpActivity.class));
+                onBoardingText="signUp";
+                Intent intent = new Intent(this, Onboarding.class);
+                intent.putExtra(EXTRA_NAME, onBoardingText);
+                startActivity(intent);
+                Log.d("xyz", "onClick: signUp");
+                break;
+            case (R.id.buttonLogIn):
+                onBoardingText="xyz";
+                Intent intent1 = new Intent(this, Onboarding.class);
+                intent1.putExtra(EXTRA_NAME, onBoardingText);
+                startActivity(intent1);
                 break;
         }
-        setContentView(R.layout.activity_onboarding);
     }
 }

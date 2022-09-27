@@ -7,6 +7,7 @@ import androidx.cardview.widget.CardView;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,10 +31,15 @@ public class Onboarding extends AppCompatActivity implements View.OnClickListene
     FirebaseAuth mAuth;
     FirebaseUser mUser;
 
+    String onBoardingtext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onboarding);
+        Intent intent=getIntent();
+        onBoardingtext= intent.getStringExtra(MainActivity.EXTRA_NAME);
+
         loginCard=findViewById(R.id.login_card);
         fogotPasswordCard= findViewById(R.id.forget_password_card);
         signupCard= findViewById(R.id.signup_card);
@@ -81,6 +87,32 @@ public class Onboarding extends AppCompatActivity implements View.OnClickListene
         progressDialog=new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
+    }
+
+    @Override
+    public void onLocalVoiceInteractionStarted() {
+        super.onLocalVoiceInteractionStarted();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        loadingFunction(onBoardingtext);
+    }
+
+    private void loadingFunction(String onBoardingtext) {
+        if(onBoardingtext.equals("signUp")){
+            Log.d("xyz1", onBoardingtext);
+            signupCard.setVisibility(View.VISIBLE);
+            loginCard.setVisibility(View.GONE);
+        }
+        else{
+            Log.d("xyz1", onBoardingtext);
+            signupCard.setVisibility(View.GONE);
+            loginCard.setVisibility(View.VISIBLE);
+        }
+        fogotPasswordCard.setVisibility(View.GONE);
+        setPasswordCard.setVisibility(View.GONE);
     }
 
     @Override
@@ -257,8 +289,8 @@ public class Onboarding extends AppCompatActivity implements View.OnClickListene
     }
 
     private void sendUserToNextActivity() {
-        Intent intent = new Intent(Onboarding.this,MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        Intent intent = new Intent(Onboarding.this,HomeActivity.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 }
