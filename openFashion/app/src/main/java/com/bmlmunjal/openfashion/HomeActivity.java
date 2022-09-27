@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -36,7 +37,10 @@ public class HomeActivity extends AppCompatActivity {
                         replaceFragment(homeFragment);
                         return true;
                     case (R.id.navigationBottomNavigationMenu):
-                        replaceFragment(navigationFragment);
+//                        replaceFragment(navigationFragment);
+                        //need to add navigation map
+                        startActivity(new Intent(getApplicationContext(),MapsActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case (R.id.cartBottomNavigationMenu):
                         replaceFragment(cartFragment);

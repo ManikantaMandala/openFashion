@@ -5,7 +5,7 @@
     <string name="_1_of_3">1 of 3</string>
     <string name="_2_of_3">2 of 3</string>
     <string name="_3_of_3">3 of 3</string>
-    <string name="text_view_heading">Welcome Aboard OpenFashion</string>
+    <string name="text_view_heading">Welcome Onboard OpenFashion</string>
     <string name="description1">Find your perfect Clothes that shine on you!</string>
     <string name="description2">Get your loved lines the perfect fit</string>
     <string name="description3">Perfect spot for all your occasions</string>
@@ -17,7 +17,6 @@
     <string name="forget_password">Forgot Password?</string>
     <string name="signup_text">No account yet you are missing a lot in the new fashion world!!</string>
     <string name="login_text">Already had an account just click here to access the world directly...</string>
-
     <string name="forget_password_subtext">Dont panic we are here for you..</string>
     <string name="enter_email">Enter your Email Address</string>
     <string name="send_link">Send Link</string>
@@ -33,7 +32,7 @@
     <string name="re_enter_password">Re-Enter Password</string>
     <string name="continuee">Continue</string>
     <string name="go_back">Go Back</string>
-
+    <string name="username">Nikita Behra</string>
     <string name="cart">Cart</string>
     <string name="pink_crew_neck_t_shirt">Pink Crew Neck T-shirt</string>
     <string name="_499">₹499</string>
@@ -43,7 +42,29 @@
     <string name="navigation">Navigation</string>
     <string name="profile">Profile</string>
     <string name="logout">Log Out!</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="dummy_score">1,250</string>
+    <string name="score">1,250</string>
+    <string name="orders">Order</string>
+    <string name="taps">1,250</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="Wishlist">Wishlist</string>
+    <string name="Cart">Cart</string>
+    <string name="Address">Address</string>
+    <string name="Help">Help</string>
+    <string name="Helpcenter">Help center</string>
+    <string name="size_chart">Size Chart</string>
+    <string name="how_to_return">How to return</string>
+    <string name="FAQs">FAQS</string>
+    <string name="Agreement">Agreement</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="Terms_and_conditions">Terms and Conditions</string>
+    <string name="About_us">About Us</string>
+    <string name="Account">Account</string>
+    <string name="Profile_details">Profile Details</string>
+    <string name="tips">Tips</string>
+    <string name="Settings">Settings</string>
+    <string name="Beta">Beta</string>
+    <string name="joinour_team">Join our team</string>
 </resources>
