@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -33,7 +34,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
     FirebaseDatabase database;
     Button logoutButton;
     ImageView arrowsizechart,arrowreturn,arrowcall,address;
-
+    ImageView imageViewArrowReturn;
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,6 +44,8 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         database = FirebaseDatabase.getInstance();
         View myView=inflater.inflate(R.layout.fragment_profile, container, false);
         logoutButton=(Button) myView.findViewById(R.id.logoutButtonProfileFragment);
+        imageViewArrowReturn = (ImageView) myView.findViewById(R.id.arrow_returnn);
+
         logoutButton.setOnClickListener(this);
 
         arrowsizechart= myView.findViewById(R.id.arrow_sizechart);
