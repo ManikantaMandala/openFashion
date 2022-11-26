@@ -67,4 +67,25 @@
     <string name="Settings">Settings</string>
     <string name="Beta">Beta</string>
     <string name="joinour_team">Join our team</string>
+    <string name="search">Search</string>
+    <string name="men">Men</string>
+    <string name="black_hoodie">Black Hoodie</string>
+    <string name="five_hundred">₹500</string>
+    <string name="seven_hundred">₹700</string>
+    <string name="nine_hundred">₹900</string>
+    <string name="fifteen_hundred">₹1500</string>
+    <string name="blue_shirt">Blue Shirt</string>
+    <string name="mens">Mens</string>
+    <string name="kids">Kids</string>
+    <string name="women">Women</string>
+    <string name="formals">Formals</string>
+    <string name="sports">Sports</string>
+    <string name="girls">Girls</string>
+    <string name="blackCrewNeckTShirt">Black Crew Neck T-Shirt</string>
+    <string name="pinkCrewNeckTShirt">Pink Crew Neck T-Shirt</string>
+    <string name="SlimWomen">Slim Women</string>
+    <string name="WomensGrayHoodie">Woman\'s Gray Hoodie</string>
+    <string name="WomensDressWithStripes">Woman\'s Dress with Stripes</string>
+    <string name="WomensPinkCoverOns">Woman\'s Pink Cover Ons</string>
+
 </resources>

@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -17,6 +18,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 
     FirebaseAuth mAuth;
     Button logoutButton;
+    ImageView imageViewArrowReturn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -24,6 +26,8 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         mAuth= FirebaseAuth.getInstance();
         View myView=inflater.inflate(R.layout.fragment_profile, container, false);
         logoutButton=(Button) myView.findViewById(R.id.logoutButtonProfileFragment);
+        imageViewArrowReturn = (ImageView) myView.findViewById(R.id.arrow_return);
+
         logoutButton.setOnClickListener(this);
         return myView;
     }
