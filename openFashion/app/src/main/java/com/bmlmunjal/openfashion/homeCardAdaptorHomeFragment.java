@@ -1,6 +1,7 @@
 package com.bmlmunjal.openfashion;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,13 +39,13 @@ public class homeCardAdaptorHomeFragment extends RecyclerView.Adapter<homeCardAd
         holder.textViewPrice2.setText(homeCard.item2PriceString);
         holder.imageViewItemPhoto1.setImageResource(homeCard.item1Image);
         holder.imageViewItemPhoto2.setImageResource(homeCard.item2Image);
-
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(context,ProductActivity.class);
+                context.startActivity(i);
+            }
+        });
     }
 
     @Override
