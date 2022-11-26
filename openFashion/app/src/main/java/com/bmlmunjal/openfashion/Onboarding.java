@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Onboarding extends AppCompatActivity implements View.OnClickListener{
     private CardView loginCard,fogotPasswordCard,signupCard,setPasswordCard;
@@ -30,6 +31,7 @@ public class Onboarding extends AppCompatActivity implements View.OnClickListene
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+    FirebaseDatabase database;
 
     String onBoardingtext;
 
@@ -37,6 +39,7 @@ public class Onboarding extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onboarding);
+        database = FirebaseDatabase.getInstance();
         Intent intent=getIntent();
         onBoardingtext= intent.getStringExtra(MainActivity.EXTRA_NAME);
 
@@ -241,21 +244,10 @@ public class Onboarding extends AppCompatActivity implements View.OnClickListene
     }
 
     private void PerformAuth() {
-//        String Name = inputName.getText().toString();
         String Email = inputEmail.getText().toString();
-//        String Number= inputNumber.getText().toString();
         String password = inputPassword.getText().toString();
         String confirmPass = inputConfirmPassword.getText().toString();
 
-//        if(Name.isEmpty()){
-//            inputName.setError("Enter a Name");
-//        }
-//        else if(!Email.matches(emailPattern)){
-//            inputEmail.setError("Enter Correct Email");
-//        }
-//        else if(Number.isEmpty() || Number.length()<10){
-//            inputNumber.setError("Enter a correct mobile number");
-//        }
         if(password.isEmpty() || password.length()<6){
             inputPassword.setError("Enter a Password minimum of length 6 digits");
             Toast.makeText(Onboarding.this,"Enter a Password minimum of length 6 digits",Toast.LENGTH_SHORT).show();
@@ -275,6 +267,12 @@ public class Onboarding extends AppCompatActivity implements View.OnClickListene
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         progressDialog.dismiss();
+
+                        User user = new User(inputName.getText().toString(),inputNumber.getText().toString(),inputEmail.getText().toString());
+                        String id = task.getResult().getUser().getUid();
+
+                        database.getReference().child("User").child(id).setValue(user);
+
                         sendUserToNextActivity();
                         Toast.makeText(Onboarding.this,"Registration Successful",Toast.LENGTH_SHORT).show();
                     }

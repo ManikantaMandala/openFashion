@@ -16,5 +16,6 @@
     <color name="colorEdittext">#14000000</color>
     <color name="line_colour">#c0c0c0</color>
     <color name="back_btn_colour">#B9EEEDED</color>
-    <color name="temp">#D6CECE</color>
+    <color name="temp">#E8E0E0</color>
+    <color name="tempp">#A6FFFFFF</color>
 </resources>

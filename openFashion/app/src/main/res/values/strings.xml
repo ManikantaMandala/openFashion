@@ -47,7 +47,7 @@
     <string name="dummy_score">1,250</string>
     <string name="score">1,250</string>
     <string name="orders">Order</string>
-    <string name="taps">1,250</string>
+    <string name="taps">Taps</string>
     <string name="dashboard">DashBoard</string>
     <string name="Wishlist">Wishlist</string>
     <string name="Cart">Cart</string>
@@ -69,4 +69,32 @@
     <string name="joinour_team">Join our team</string>
     <string name="start_ordering">Start Ordering</string>
     <string name="no_orders">No Orders Yet</string>
+    <string name="men_Measurement">Men Measurement</string>
+    <string name="Change_units">Change Units</string>
+    <string name="inches">in</string>
+    <string name="centimeters">cm</string>
+    <string name="women_Measurement">Women Measurement</string>
+    <string name="one_point">Upon delivery, a product may be returned within 4 days.</string>
+    <string name="two_point">The item must be repackaged with all tags.</string>
+    <string name="three_point">If you wish to return the item, please dont wash it.</string>
+    <string name="four_point">If any item is found to be damaged, then the return will be cancelled immediately.</string>
+    <string name="five_point">Our agent will pick up the item in 2 working days after you opt to return it.</string>
+    <string name="add_address_text">Add New Address</string>
+    <string name="Name">Name*</string>
+    <string name="mobile">Mobile *</string>
+    <string name="pincode">Pincode *</string>
+    <string name="state">State *</string>
+    <string name="address">Address(House No., Building Street, Area) *</string>
+    <string name="locality">Locality/Town *</string>
+    <string name="city">City/District *</string>
+    <string name="save">Save</string>
+    <string name="Womens_wear">Womens Fashion wear</string>
+    <string name="Yellow_shirt">Yellow Crow Nock Shirt</string>
+    <string name="quantity">Quantity</string>
+    <string name="Price">Price</string>
+    <string name="Amount">₹499</string>
+    <string name="product_message">Fashion is form of self-expression and autonomy at a
+perticular period and place and in a specific context</string>
+    <string name="Select_size">Select Size</string>
+
 </resources>

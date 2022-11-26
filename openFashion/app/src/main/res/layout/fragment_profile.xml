@@ -29,16 +29,18 @@
                     app:layout_constraintHorizontal_bias="0.501"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="132dp"
                     android:layout_marginTop="216dp"
+                    android:gravity="center"
                     android:text="@string/username"
                     android:textColor="@color/white"
                     android:textSize="24dp"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,7 +81,7 @@
             android:id="@+id/overlap_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/temp"
+            app:cardBackgroundColor="@color/white"
             android:layout_marginTop="-20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
@@ -193,14 +195,15 @@
                         android:id="@+id/orders_dashboard_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="20dp">
+                        android:paddingVertical="15dp">
+
                         <ImageView
                             android:id="@+id/orders_icon"
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/orders_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
                         <TextView
@@ -255,7 +258,8 @@
                         android:id="@+id/wishlist_dashboard_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="20dp">
+                        android:background="@color/temp"
+                        android:paddingVertical="15dp">
 
 
                         <TextView
@@ -270,11 +274,11 @@
 
                         <ImageView
                             android:id="@+id/wishlist_icon"
-                            android:layout_width="60dp"
+                            android:layout_width="40dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/wishlist_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -322,7 +326,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/cart_dashboard_layout"
-                        android:paddingVertical="20dp">
+                        android:paddingVertical="15dp">
 
 
                         <TextView
@@ -337,11 +341,11 @@
 
                         <ImageView
                             android:id="@+id/cart_icon"
-                            android:layout_width="60dp"
-                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/ic_baseline_shopping_cart_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -386,7 +390,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/address_dashboard_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <TextView
                             android:id="@+id/Address_quote"
@@ -399,7 +403,7 @@
                             app:layout_constraintTop_toBottomOf="@id/address_text" />
                         <ImageView
                             android:id="@+id/address_icon"
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="-5dp"
@@ -418,6 +422,7 @@
                             app:layout_constraintStart_toEndOf="@+id/address_icon"
                             app:layout_constraintTop_toTopOf="parent" />
                         <ImageView
+                            android:id="@+id/address_arrow"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="20dp"
@@ -480,11 +485,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/helpcenter_help_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="52dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:id="@+id/helpcenter_icon"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="-5dp"
@@ -514,6 +519,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/helpcenter_text" />
 
                         <ImageView
+                            android:id="@+id/help_centre_arrow"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/forward_arrow"
@@ -544,7 +550,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/sizechart_help_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
 
                         <TextView
@@ -559,7 +565,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/sizechart_text" />
 
                         <ImageView
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:id="@+id/sizecahrt_icon"
                             android:layout_marginStart="10dp"
@@ -578,6 +584,7 @@
                             app:layout_constraintStart_toEndOf="@+id/sizecahrt_icon"
                             app:layout_constraintTop_toTopOf="parent"/>
                         <ImageView
+                            android:id="@+id/arrow_sizechart"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/forward_arrow"
@@ -608,7 +615,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/how_to_return_help_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <TextView
                             android:id="@+id/how_to_return_layout"
@@ -622,11 +629,11 @@
 
                         <ImageView
                             android:id="@+id/how_to_return_icon"
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/how_to_return_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -642,6 +649,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
+                            android:id="@+id/arrow_returnn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="20dp"
@@ -672,7 +680,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/FAQs_help_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <TextView
                             android:id="@+id/FAQs_layout"
@@ -686,11 +694,11 @@
 
                         <ImageView
                             android:id="@+id/FAQs_icon"
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/faq_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -760,10 +768,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/privacy_policy_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <ImageView
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="52dp"
                             android:id="@+id/privacy_policy_icon"
                             android:layout_marginStart="10dp"
@@ -771,6 +779,7 @@
                             android:src="@drawable/privacy_policy_icon"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
                         <TextView
                             android:id="@+id/privacy_policy_text"
                             style="@style/title_24"
@@ -779,6 +788,7 @@
                             android:layout_marginStart="18dp"
                             android:text="@string/privacy_policy"
                             android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/privacy_policy_icon"
                             app:layout_constraintStart_toEndOf="@+id/privacy_policy_icon"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -811,15 +821,15 @@
                         android:id="@+id/terms_and_conditions_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="20dp">
+                        android:paddingVertical="15dp">
 
                         <ImageView
                             android:id="@+id/terms_and_conditions_icon"
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="52dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/terms_and_conditions"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -831,6 +841,7 @@
                             android:layout_marginStart="18dp"
                             android:text="@string/Terms_and_conditions"
                             android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/terms_and_conditions_icon"
                             app:layout_constraintStart_toEndOf="@+id/terms_and_conditions_icon"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -864,7 +875,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/About_us_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <TextView
                             android:id="@+id/About_us_quote"
@@ -878,11 +889,11 @@
 
                         <ImageView
                             android:id="@+id/About_us_icon"
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/about_us_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -952,10 +963,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/profile_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <ImageView
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="52dp"
                             android:id="@+id/profile_icon"
                             android:layout_marginStart="10dp"
@@ -963,6 +974,7 @@
                             android:src="@drawable/profile_icon"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
                         <TextView
                             android:id="@+id/Profile_text"
                             style="@style/title_24"
@@ -971,6 +983,7 @@
                             android:layout_marginStart="18dp"
                             android:text="@string/Profile_details"
                             android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/profile_icon"
                             app:layout_constraintStart_toEndOf="@+id/profile_icon"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -1003,10 +1016,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/tips_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <ImageView
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="52dp"
                             android:id="@+id/tips_icon"
                             android:layout_marginStart="10dp"
@@ -1014,6 +1027,7 @@
                             android:src="@drawable/tips_icon"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
                         <TextView
                             android:id="@+id/tips_text"
                             style="@style/title_24"
@@ -1022,6 +1036,7 @@
                             android:layout_marginStart="18dp"
                             android:text="@string/tips"
                             android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/tips_icon"
                             app:layout_constraintStart_toEndOf="@+id/tips_icon"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -1054,19 +1069,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/settings_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
 
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="52dp"
                             android:id="@+id/settings_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="52dp"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="-5dp"
                             android:src="@drawable/settings_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:tint="@color/black" />
+
                         <TextView
                             android:id="@+id/settings_text"
                             style="@style/title_24"
@@ -1075,6 +1091,7 @@
                             android:layout_marginStart="18dp"
                             android:text="@string/Settings"
                             android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/settings_icon"
                             app:layout_constraintStart_toEndOf="@+id/settings_icon"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -1136,10 +1153,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/joinour_team_layout"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="15dp"
                         >
                         <ImageView
-                            android:layout_width="60dp"
+                            android:layout_width="50dp"
                             android:layout_height="52dp"
                             android:id="@+id/joinour_team_icon"
                             android:layout_marginStart="10dp"
@@ -1147,6 +1164,7 @@
                             android:src="@drawable/joinour_team_icon"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
                         <TextView
                             android:id="@+id/joinour_team_text"
                             style="@style/title_24"
@@ -1155,6 +1173,7 @@
                             android:layout_marginStart="18dp"
                             android:text="@string/joinour_team"
                             android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/joinour_team_icon"
                             app:layout_constraintStart_toEndOf="@+id/joinour_team_icon"
                             app:layout_constraintTop_toTopOf="parent" />
 

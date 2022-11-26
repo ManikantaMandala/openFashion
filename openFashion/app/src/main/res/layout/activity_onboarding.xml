@@ -79,7 +79,32 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/userlogin_sub_text" />
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
+                android:id="@+id/passowrdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_address">
+
+                <EditText
+                    android:id="@+id/passowrdd_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="20dp"
+                    android:hint="@string/password"
+                    style="@style/heading_italics_18"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
             <EditText
+                android:visibility="visible"
                 android:id="@+id/password"
                 style="@style/heading_italics_18"
                 android:layout_width="match_parent"
